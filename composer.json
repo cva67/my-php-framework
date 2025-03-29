@@ -1,6 +1,6 @@
 {
   "name": "cva67/my-php-mvc-framework",
-  "version": "v0.0.4-beta",
+  "version": "v0.0.5-beta",
   "license": "MIT",
   "autoload": {
     "psr-4": {
