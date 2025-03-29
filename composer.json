@@ -1,12 +1,19 @@
 {
-    "name": "cva67/my-php-mvc-framework",
-    "description": "Simple Test php Framework",
-    "type": "library",
-    "authors": [
-        {
-            "name": "cva67"
-        }
-    ],
-    "minimum-stability": "beta",
-    "require": {}
+  "name": "cva67/my-php-mvc-framework",
+  "version": "v0.0.4-beta",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "cva67\\phpmvc\\": "./"
+    }
+  },
+  "description": "Simple Test php Framework",
+  "type": "library",
+  "authors": [
+    {
+      "name": "cva67"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {}
 }
