@@ -1,5 +1,5 @@
 {
-  "name": "cva67/my-php-mvc-framework",
+  "name": "cva67/core-php",
   "version": "v0.0.5-beta",
   "license": "MIT",
   "autoload": {
