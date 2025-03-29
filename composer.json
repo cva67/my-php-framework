@@ -1,0 +1,12 @@
+{
+    "name": "cva67/my-php-mvc-framework",
+    "description": "Simple Test php Framework",
+    "type": "library",
+    "authors": [
+        {
+            "name": "cva67"
+        }
+    ],
+    "minimum-stability": "beta",
+    "require": {}
+}
