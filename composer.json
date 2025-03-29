@@ -4,7 +4,7 @@
   "license": "MIT",
   "autoload": {
     "psr-4": {
-      "cva67\\phpmvc\\": "./"
+      "cva67\\phpmvc\\": "."
     }
   },
   "description": "Simple Test php Framework",

@@ -1,7 +1,7 @@
 <?php
 
 
-namespace cva67\phpmvc\core;
+namespace cva67\phpmvc;
 
 
 class Session

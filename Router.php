@@ -1,6 +1,6 @@
 <?php
 
-namespace cva67\phpmvc\core;
+namespace cva67\phpmvc;
 
 class Router
 {
@@ -36,6 +36,7 @@ class Router
                 return call_user_func($call['callback']);
             } elseif (is_array($call['callback']) && count($call['callback']) === 2) {
                 [$controllerClass, $methodName] = $call['callback'];
+
                 if (class_exists($controllerClass)) {
                     $controller = new $controllerClass();
                     $controller->runMiddlewares($methodName);
@@ -55,6 +56,7 @@ class Router
 
     private function handleRoute($method, $uri)
     {
+
 
         foreach ($this->routes[$method] as $routeUri => $callback) {
             $pattern = preg_replace('/\{([a-z_]+)\}/', '(?P<$1>[^/]+)', $routeUri);

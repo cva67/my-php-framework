@@ -1,6 +1,6 @@
 <?php
 
-namespace cva67\phpmvc\core;
+namespace cva67\phpmvc;
 
 use PDO;
 

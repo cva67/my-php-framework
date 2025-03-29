@@ -1,6 +1,6 @@
 <?php
 
-namespace cva67\phpmvc\core;
+namespace cva67\phpmvc;
 
 use cva67\phpmvc\config\config;
 
@@ -36,7 +36,7 @@ class App
             $route = $this->router->resolve($uri, $method, $this->request);
             // echo $route;
         } catch (\Exception $e) {
-            // echo "Server error:-" . $e;
+            //echo "Server error:-" . $e;
             $this->response->setStatusCode($e->getCode() ?? 500);
             $this->view->render('errors/_error', [
                 'exception' => $e
@@ -46,7 +46,8 @@ class App
 
     private function loadRoutes()
     {
-        $routeFile = __DIR__ . '/../routes/web.php';
+        $routeFile = '../routes/web.php';
+
         if (file_exists($routeFile)) {
             $router = $this->router;
             require_once $routeFile;

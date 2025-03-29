@@ -1,6 +1,6 @@
 <?php
 
-namespace cva67\phpmvc\core\form;
+namespace cva67\phpmvc\form;
 
 use cva67\phpmvc\app\BaseModel;
 

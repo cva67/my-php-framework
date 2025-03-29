@@ -1,6 +1,6 @@
 <?php
 
-namespace cva67\phpmvc\core;
+namespace cva67\phpmvc;
 
 class View
 {
@@ -10,7 +10,7 @@ class View
     {
         extract($params);
         ob_start();
-        $viewPath = __DIR__ . "/../pages/$page.php";
+        $viewPath =  "../pages/$page.php";
         if (!file_exists($viewPath)) {
             throw new \Exception("View {$viewPath} not found");
         }
@@ -22,7 +22,7 @@ class View
 
     public  function layoutRender()
     {
-        $layoutPath = __DIR__ . "/../pages/layouts/main.php";
+        $layoutPath =  "../pages/layouts/main.php";
         if (!file_exists($layoutPath)) {
             throw new \Exception("Layout Page not found");
         }
