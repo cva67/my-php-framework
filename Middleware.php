@@ -1,8 +1,8 @@
 <?php
 
-namespace MyApp\core;
+namespace cva67\phpmvc\core;
 
-use MyApp\core\App;
+use cva67\phpmvc\core\App;
 
 abstract class Middleware
 {

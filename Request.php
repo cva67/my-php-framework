@@ -1,6 +1,6 @@
 <?php
 
-namespace MyApp\core;
+namespace cva67\phpmvc\core;
 
 class Request
 {

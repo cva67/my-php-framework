@@ -1,9 +1,9 @@
 <?php
 
-namespace MyApp\core\exceptions;
+namespace cva67\phpmvc\core\exceptions;
 
 use Exception;
-use MyApp\core\App;
+use cva67\phpmvc\core\App;
 
 class Forbidden extends Exception
 {

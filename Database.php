@@ -1,8 +1,8 @@
 <?php
 
-namespace MyApp\core;
+namespace cva67\phpmvc\core;
 
-use MyApp\config\config;
+use cva67\phpmvc\config\config;
 use PDO;
 use PDOException;
 

@@ -1,8 +1,8 @@
 <?php
 
-namespace MyApp\core\form;
+namespace cva67\phpmvc\core\form;
 
-use MyApp\app\BaseModel;
+use cva67\phpmvc\app\BaseModel;
 
 class Form
 {

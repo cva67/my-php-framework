@@ -1,6 +1,6 @@
 <?php
 
-namespace MyApp\core;
+namespace cva67\phpmvc\core;
 
 use PDO;
 
@@ -29,7 +29,7 @@ class Migration
                 continue;
             }
             require_once BASE_PATH . '/database/migrations/' . $migration;
-            $className =  'MyApp\\database\\migrations\\' . pathinfo($migration, PATHINFO_FILENAME);
+            $className =  'cva67\phpmvc\\database\\migrations\\' . pathinfo($migration, PATHINFO_FILENAME);
             $tableClass = new $className();
             $tableClass->up();
             $this->logMigration($migration);
@@ -96,7 +96,7 @@ class Migration
         $stmt = $this->pdo->prepare($sql);
         $stmt->execute([':name' => $foundFile]);
         require_once BASE_PATH . '/database/migrations/' . $foundFile;
-        $className =  'MyApp\\database\\migrations\\' . pathinfo($foundFile, PATHINFO_FILENAME);
+        $className =  'cva67\phpmvc\\database\\migrations\\' . pathinfo($foundFile, PATHINFO_FILENAME);
         $tableClass = new $className();
         $tableClass->down();
     }
